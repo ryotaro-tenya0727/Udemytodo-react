@@ -11,8 +11,8 @@ export const App = () => {
     <>
       <h1 style={{ color: "red" }}>こんにちは</h1>
       <p style={contentStyle}>React</p>
-      <ColorfulMessage color={"blue"} message={"なるほど"} />
-      <ColorfulMessage color={"pink"} message={"あ"} />
+      <ColorfulMessage color={"blue"}>ほにたん</ColorfulMessage>
+      <ColorfulMessage color={"pink"}>みこたん</ColorfulMessage>
       <button onClick={() => onClickButton()}>1</button>
     </>
   );
