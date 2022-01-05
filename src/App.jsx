@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 
 export const App = () => {
+  console.log("最初");
   const [num, setNum] = useState(0);
   const [faceShowFlag, setFaceshowFlag] = useState(false);
   const onClickCountUP = () => {
@@ -13,11 +14,12 @@ export const App = () => {
   };
 
   useEffect(() => {
+    console.log("useeffect");
     if (num > 0) {
       if (num % 3 === 0) {
-        faceShowFlag || setFaceshowFlag(true);
+        // faceShowFlag || setFaceshowFlag(true);
       } else {
-        faceShowFlag && setFaceshowFlag(false);
+        // faceShowFlag && setFaceshowFlag(false);
       }
     }
   }, [num]);
